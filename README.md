@@ -19,9 +19,9 @@ In `create_dataset.ipynb`:
     ```
 - A file named `data_dict_emb_test.pth` will be generated.
 
-### 2. Evaluate EPHN
+### 2. Evaluate
 
-In `_code/evaluate_EPHN.ipynb`:
+In `_code/evaluate.ipynb`:
 - Replace the following directories with your local paths and run the cell:
     Replace with the `data_dict_emb_test.pth` generated from the first step:
     ```python
@@ -33,7 +33,7 @@ In `_code/evaluate_EPHN.ipynb`:
     ```
    
 
-### 3. Run Cells in _code/evaluate_EPHN.ipynb to Get Results
+### 3. Run Cells in _code/evaluate.ipynb to Get Results
 
 Run the cells in order to get results and mAP scores:
 - `Fvec_val`: Query feature vectors, `N_val` by `D` `torch.Tensor`
