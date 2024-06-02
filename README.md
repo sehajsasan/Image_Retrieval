@@ -23,16 +23,17 @@ In `create_dataset.ipynb`:
 
 In `_code/evaluate_EPHN.ipynb`:
 - Replace the following directories with your local paths and run the cell:
+    Replace with the `data_dict_emb_test.pth` generated from the first step:
     ```python
     dsets_dict = torch.load('/notebooks/Image_Retrieval/EasyPositiveHardNegative-master/data_dict_emb_test.pth')
     ```
-    Replace with the `data_dict_emb_test.pth` generated from the first step:
+    Replace with the checkpoint model provided in the Google Drive link.
     ```python
     checkpoint = torch.load('/notebooks/Image_Retrieval/EasyPositiveHardNegative-master/_result/EPHN/HAR_R50/G16_lr0.03/model_state_dict_R5050.pth')
     ```
-    Replace with the checkpoint model provided in the Google Drive link.
+   
 
-### 3. Run Cells to Get Results
+### 3. Run Cells in _code/evaluate_EPHN.ipynb to Get Results
 
 Run the cells in order to get results and mAP scores:
 - `Fvec_val`: Query feature vectors, `N_val` by `D` `torch.Tensor`
